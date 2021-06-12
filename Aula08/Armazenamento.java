@@ -25,7 +25,7 @@ public class Armazenamento {
 			switch(op) {
 			case 1:
 				for(;resp == 'S';) {
-					System.out.println("Digite essa bagaça");
+					System.out.println("Digite o nome do produto");
 					nome = ler.next();
 					System.out.println("Digite categoria");
 					Categoria = ler.next();
@@ -67,6 +67,7 @@ public class Armazenamento {
 				System.out.println(produto);
 			break;
 			}
+			resp = 'S';
 		}while(op != 5);
 		
 		//produtos.add(new Produtos(Nome, Categoria, Quantidade));
